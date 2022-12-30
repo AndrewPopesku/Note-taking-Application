@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "kiJ3PATZyagM/CX8T+otCI2t3x41LeDk1wql1xef8sLbn4fIHsDdWuzG/m+on0+HNqfMB+fVM6/go5MvKHbciA==",
+  "success": true,
+  "projectFilePath": "D:\\Programming\\study\\C# console apps\\Note-taking Application\\Note-taking Application\\Note-taking Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\popes\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.12\\microsoft.windowsdesktop.app.ref.6.0.12.nupkg.sha512",
+    "C:\\Users\\popes\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.12\\microsoft.netcore.app.ref.6.0.12.nupkg.sha512",
+    "C:\\Users\\popes\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.12\\microsoft.aspnetcore.app.ref.6.0.12.nupkg.sha512",
+    "C:\\Users\\popes\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.12\\microsoft.netcore.app.host.win-x64.6.0.12.nupkg.sha512"
+  ],
+  "logs": []
+}

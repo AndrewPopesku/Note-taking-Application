@@ -3,7 +3,7 @@ The console app for taking notes and managing them
 
 
 Launch program.
-Firstly, you'll see message which asks you to press given keys to perform some operations to you notes:
+Firstly, you'll see message which asks you to press given keys to perform some operations on you notes:
 ![image](https://user-images.githubusercontent.com/101664066/210097846-a0b44626-9b96-4349-9579-bbd184e00a5f.png)
 
 1)If you press "A" key, you'll be able to write new note

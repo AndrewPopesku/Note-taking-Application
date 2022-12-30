@@ -17,7 +17,7 @@ Firstly, you'll see message which asks you to press given keys to perform some o
 So, we can see changes now. As you can notice, all edited notes has a sign after text - "(edited)"
 ![image](https://user-images.githubusercontent.com/101664066/210097981-af8a781a-7b7a-4926-9266-a79cf9324745.png)
 
-4)If you press "D" key, you can delete by providing proper id
+4)If you press "D" key, you can delete note by providing proper id
 ![image](https://user-images.githubusercontent.com/101664066/210098166-002f1167-6d6c-4dfb-a3ce-ad22c97aeb5e.png)
 
 5) Or you can clear all database by pressing "C" key

@@ -12,7 +12,7 @@ while(activeProgram)
 {
     Console.ForegroundColor = ConsoleColor.Cyan;
     Console.WriteLine("\nWhat do you want to do?");
-    Console.Write("Press [A] to add note, [R] - read all, [S] - read sorted list, [E] - edit note(by id) [D] - delete note(by id), [C] - clear file or [Q] - to quit: ");
+    Console.Write("Press [A] to add note, [R] - read all, [E] - edit note(by id) [D] - delete note(by id), [C] - clear file or [Q] - to quit: ");
     var key = Console.ReadKey().Key;
     Console.WriteLine();
     fileReader.ReadFile();

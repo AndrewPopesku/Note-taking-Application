@@ -1,3 +1,2 @@
-1 || Today is Friday || 30.12.2022 12:50:57
-2 || my name is Andrew! || 30.12.2022 12:51:09
-3 || strangePeepoClown || 30.12.2022 12:51:19
+1 || learn c# || 30.12.2022 15:21:18
+2 || tidy my room now! (edited) || 30.12.2022 15:21:40

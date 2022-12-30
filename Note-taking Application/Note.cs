@@ -17,6 +17,6 @@ namespace Note_taking_Application
         public Note(int id, string text, DateTime date) : this(id, text) => Date = date;
 
         public override string ToString()
-            => string.Format("| {0,-3} | {1,-80} | {2,-21} |", Id, Text, Date);
+            => string.Format("| {0,-3} | {1,-80} | {2,-28} |", Id, Text, Date);
     }
 }

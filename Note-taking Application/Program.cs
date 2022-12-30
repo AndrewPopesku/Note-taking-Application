@@ -12,7 +12,7 @@ while(activeProgram)
 {
     Console.ForegroundColor = ConsoleColor.Cyan;
     Console.WriteLine("\nWhat do you want to do?");
-    Console.Write("Press [A] to add note, [R] - read all, [D] - delete note(by id), [C] - clear file or [Q] - to quit: ");
+    Console.Write("Press [A] to add note, [R] - read all, [S] - read sorted list, [E] - edit note(by id) [D] - delete note(by id), [C] - clear file or [Q] - to quit: ");
     var key = Console.ReadKey().Key;
     Console.WriteLine();
     fileReader.ReadFile();
@@ -30,14 +30,25 @@ while(activeProgram)
         case ConsoleKey.R:
             fileReader.UpdateFile();
             Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.WriteLine(new string('_', 114));
-            Console.WriteLine("| #Id | Note " + new string(' ', 76) + "|     Date and time     |");
-            foreach(var note in fileReader.noteList)
+            Console.WriteLine(new string('_', 121));
+            Console.WriteLine("| #Id | Note " + new string(' ', 76) + "| Date and time (when updated) |");
+            Console.WriteLine(new string('=', 121));
+
+            foreach (var note in fileReader.noteList)
             {
-                Console.WriteLine(new string('-', 114));
                 Console.WriteLine(note);
+                Console.WriteLine(new string('-', 121));
             }
-            Console.WriteLine(new string('_', 114));
+            break;
+
+        case ConsoleKey.E:
+            Console.ForegroundColor = ConsoleColor.DarkGreen;
+            Console.Write("\nEnter id of note you want to edit(id > 0) -> ");
+            int idToEdit = Int32.Parse(Console.ReadLine());
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write("Write your new note to rewrite previous one: ");
+            string textToEdit = Console.ReadLine();
+            fileReader.EditNote(idToEdit, textToEdit);
             break;
 
         case ConsoleKey.D:

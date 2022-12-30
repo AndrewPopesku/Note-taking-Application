@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Linq;
 
 namespace Note_taking_Application
 {
     class FileEditor
     {
+
         public string Path { get; }
         public NoteList noteList { get; set; }
         public int Count { get => noteList.Count; }
@@ -95,6 +97,27 @@ namespace Note_taking_Application
             noteList[Count - 1] = note;
         }
 
+        public void EditNote(int id, string text)
+        {
+            if (id < 0) throw new ArgumentOutOfRangeException();
+            if (id > Count - 1) Console.WriteLine($"There is no note with {id}. Please try again..");
+
+            string[] lines = File.ReadAllLines(Path);
+            StreamWriter writer = new StreamWriter(Path);
+            for (int currentLine = 1; currentLine <= lines.Length; ++currentLine)
+            {
+                if (ReformatStringToNote(lines[currentLine - 1]).Id == id)
+                {
+                    Note editedNote = new Note(id, text + " (edited)", DateTime.Now);
+                    writer.WriteLine(FormatNoteForStoring(editedNote));
+                    continue;
+                }
+                writer.WriteLine(lines[currentLine - 1]);
+            }
+
+            writer.Close();
+        }
+        
         public void DeleteNote(int id)
         {
             if (id < 0) throw new ArgumentOutOfRangeException();

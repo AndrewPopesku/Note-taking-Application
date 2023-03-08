@@ -1,7 +1,6 @@
 ﻿using System.Text;
 using Note_taking_Application;
 
-Console.WriteLine("-It's note-taking application-\n");
 
 string path = @"D:\Programming\study\C# console apps\" +
               @"Note-taking Application\Note-taking Application\data.txt";
@@ -10,6 +9,9 @@ bool activeProgram = true;
 
 while(activeProgram)
 {
+    Console.Clear();
+    Console.WriteLine("-It's note-taking application-\n");
+
     Console.ForegroundColor = ConsoleColor.Cyan;
     Console.WriteLine("\nWhat do you want to do?");
     Console.Write("Press [A] to add note, [R] - read all, [E] - edit note(by id) [D] - delete note(by id), [C] - clear file or [Q] - to quit: ");
@@ -70,5 +72,7 @@ while(activeProgram)
     }
 
     Console.ResetColor();
+    Console.WriteLine("Press any key to continue..");
+    Console.ReadKey();
 }
 
